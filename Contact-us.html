@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(143, 143, 184);
+        font-size:15px;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container{
+        width: 80%;
+        margin:50px auto;
+
+    }
+    .container-box{
+        background-color: #fff;
+        display: flex;
+    }
+    .contact-left{
+        flex-basis: 60%;
+        padding: 40px 60px;
+    }
+    .contact-right{
+        flex-basis: 40%;
+        padding: 40px;
+        background-color: #1c00b5;
+        color: white;
+    }
+    h1{
+        margin-bottom: 1rem;
+    }
+    .container p{
+        margin-bottom: 40px;
+    }
+    .input-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-basis: 45%;
+    }
+    
+        
+    
+    input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        padding-bottom: 5px;
+
+    }
+    textarea{
+        width: 100%;
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+        }
+        label{
+            margin-bottom: 6px;
+            padding-right: 1rem;
+            display: block;
+            color: #1c00b5;
+        }
+        button{
+            background-color:white ;
+            width: 100px;
+            border: none;
+            outline: none;
+            color: #1c00b5;
+            height: 35px;
+            border-radius: 6rem;
+            margin-top:20px ;
+            border: 1px solid #1c00b5 ;
+
+        }
+        button:hover{
+            color:white ;
+            background-color: #1c00b5;
+            
+        }
+        .contact-left h3{
+            color: #1c00b5;
+            font-weight: 600;
+            margin-bottom:35px ;
+
+        }
+        .contact-right h3{
+            font-weight: 600;
+            margin-bottom:35px ;
+
+        }
+        tr td :first-child{
+            padding-right: 20px;
+        }
+        tr td{
+            padding-top: 20px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Connect with Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio culpa quas rerum voluptates<br> accusantium suscipit iste veritatis sint? Quasi quidem dolorum possimus blanditiis excepturi dicta magni et a atque.</p>
+        <div class="container-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                <form action="">
+                    
+                    <div class="input-row">
+                        
+                            <label>Name</label>
+                            <input type="text">
+                        
+                        
+                    </div>
+                    <div class="input-row">
+                        <label>Email</label>
+                            <input type="text" placeholder="ex- abc@abc.com">
+                        
+                    </div>
+                    <label>Message</label>
+                    <textarea name="" id="" rows="6" placeholder="message"></textarea>
+                    <button type="submit">Send</button>
+                    </div>
+                </form>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email :</td>
+                            <td>contac@apnabus.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone :</td>
+                            <td>+91 955753811</td>
+                        </tr>
+                        <tr>
+                            <td>Address : </td>
+                            <td>Mu janini</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
