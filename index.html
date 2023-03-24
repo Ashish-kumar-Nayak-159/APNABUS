@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3600">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="3600"> -->
     <link rel="icon" type="image/png" href="./Assets/image/icons2.png">
     <title>APNA BUS</title>
     <link rel="stylesheet" href="style.css">
@@ -41,11 +41,11 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="mun nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="mun nav-link active" aria-current="page" href="./index.html">Home</a>
                     <div class="line" ></div>
                   </li>
                   <li class="nav-item">
-                    <a class="mun nav-link" aria-current="page" href="#">About Us</a>
+                    <a class="mun nav-link" aria-current="page" href="./about_us.html">About Us</a>
                     <div class="line"></div>
                   </li>
                   <li class="nav-item">
@@ -57,11 +57,48 @@
                     <div class="line"></div>
                   </li>
                   <li class="nav-item">
-                    <a class="mun nav-link" aria-current="page" href="#contact_us">Contact Us</a>
+                    <a class="mun nav-link" aria-current="page" href="./Contact-us.html ">Contact Us</a>
                     <div class="line"></div>
                   </li>
                   <li class="nav-item">
-                    <a class="mun nav-link" aria-current="page" href="#">Login/Register</a>
+                    <a type="button" class="nav nav-link text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Login/Register
+                    </a>
+                    <!--Toggle-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Login For User</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form action="#">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                  <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Login</button>
+
+                                </div>
+                                <div class="form-group py-3">
+                                  <a href="#" class="forgot ">Forget Password</a>
+                                </div>
+
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="./user-register.html" class="btn btn-primary" >Register</a>
+                            <a type="submit" class="btn btn-info text-light">Agent Login</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="line"></div>
                   </li>
                 </ul>
@@ -183,7 +220,7 @@
               <h1 class="text-center"> Service <span>by Us</span></h1>
               <div class="line1 "></div>
           </div>
-          <div id="carouselExampleIndicators" class="carousel slide bg-light py-2 sbu">
+          <div id="carouselExampleIndicators" class="carousel slide py-2 sbu">
               <div class="carousel-indicators ">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                       class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -292,7 +329,8 @@
     <div class="c-body">
       <div class="row">
         <div class="col-md-4">
-          <h2 class="text-center txt">We are Always For You...</h2>
+          <!-- <h2 class="text-center txt">We are Always For You...</h2> -->
+          <iframe class="text-center txt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29903.15108756144!2d85.81541487910155!3d20.4695511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190dabde0166cd%3A0x50746dd358f9e541!2sAjay%20Binay%20Institute%20of%20Technology%20(ABIT)!5e0!3m2!1sen!2sin!4v1679486329174!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="col-md-8">
           
@@ -359,10 +397,10 @@
           <h3 class="text-light f-hd"> Quick Link</h3>
           
           <ul >
-                  <li><a href="#">Home</a></li>
+                  <li><a href="./index.html">Home</a></li>
                   <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">About us</a></li>                   
+                  <li><a href="./Contact-us.html">Contact Us</a></li>
+                  <li><a href="./about_us.html">About us</a></li>                   
           </ul>
 
       </div>
