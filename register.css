@@ -1,0 +1,14 @@
+.main-body{
+    background-color: beige !important;
+    padding: 2rem 0;
+}
+.reg-body{
+    margin: 0 25rem;
+    padding: 2rem 0rem;
+    left: auto;
+    right: auto;
+    border: 2px solid black;
+}
+strong{
+    color: red;
+}

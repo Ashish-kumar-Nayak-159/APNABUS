@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="./Assets/image/icons2.png">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--getbootstrap css link start-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <!--Offline Bootstrap-->
+    <link rel="stylesheet" href="./Assets/Bootstrap/css/bootstrap.min.css">
+<!--getbootstrap css link start-->
+<!--icons8.com font Awsome link start-->
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<!--icons8.com font Awsome link end-->
+
+<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+<body>
+    <header>
+        <!--Heading part-->
+        <section class="apna-bus-navbar fw-semibold">
+          <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <!-- <div class="logo_bg"></div> -->
+                     <!-- APNABUS  -->
+                     <img class="logo_bg" src="./Assets/image/s-logo.png" width="75%" height="50%" alt="APNABUS">
+                    </a>
+                  
+    
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Menu Nav bar start -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="mun nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <div class="line" ></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="mun nav-link" aria-current="page" href="./about_us.html">About Us</a>
+                        <div class="line"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="mun nav-link" aria-current="page" href="#">Bus</a>
+                        <div class="line"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="mun nav-link" aria-current="page" href="#">Offer</a>
+                        <div class="line"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="mun nav-link" aria-current="page" href="./Contact-us.html ">Contact Us</a>
+                        <div class="line"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a type="button" class="nav nav-link text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Login/Register
+                        </a>
+                        <!--Toggle-->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login For User</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form action="#">
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                      <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Login</button>
+    
+                                    </div>
+                                    <div class="form-group py-3">
+                                      <a href="#" class="forgot ">Forget Password</a>
+                                    </div>
+    
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                <a type="button" class="btn btn-primary" >Register</a>
+                                <a type="submit" class="btn btn-info text-light">Agent Login</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="line"></div>
+                      </li>
+                    </ul>
+                  </div>
+                    <!--Menu Nav bar end -->
+                </div>
+              </nav>
+        </section>
+      </header>
+    <main class="main-body">
+        <section class="reg-body">
+            <div class="container ">
+                <!--form-->
+                <form action="#" class="needs-validation" method="post" novalidate>
+                    <div class="form-group text-center">
+                        <h4>User Register Here</h4>
+                        <div class="line1"></div>
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">User Name</label><strong>*</strong>
+                      <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter user Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label><strong>*</strong>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPhoneNumber1">Contact Number</label><strong>*</strong>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" >
+                                    <option selected value="+91">+91</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+99">+99</option>
+                                    <option value="+12">+12</option>
+                                  </select>
+                              </div>
+                            </div>
+                            <input type="tel" class="form-control" id="exampleInputPhoneNumber1" aria-describedby="emailHelp" placeholder="Enter Mobile number" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-group col-md-3">
+                        <label for="inputState">Your Role</label><strong>*</strong>
+                        <select id="inputState" class="form-control">
+                          <!-- <option>Select</option> -->
+                          <option value="User">User</option>
+                          <option value="Admin">Admin</option>
+                          <option value="Agent">Agent</option>
+                        </select>
+                      </div>
+                </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputdob1">Date of Birth</label><strong>*</strong>
+                      <input type="date" class="form-control sm-3" id="exampleInputdob1"  required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label><strong>*</strong>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Conform Password</label><strong>*</strong>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter Password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input my-3" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label my-1" for="invalidCheck">
+                            Agree to terms and conditions
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <div class="form-group">
+                        <div class="col-sm-10 ">
+                          <button type="submit" class="btn btn-primary btn-md" data-toggle="button">Sign in</button>
+                        </div>
+                      </div>
+                  </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="Container cont">
+            <div class="row r1">
+                <div class="col-md-3 r-col">
+                <h3 class="text-light f-hd"> Service</h3>
+                  <ul> 
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Condoctor</a></li>
+                    <li><a href="./user-register.html">Register</a></li>
+                    <li><a href="./user-register.html">Login</a></li>    
+                  </ul>
+            </div>
+            <div class="col-md-3 r-col">
+                <h3 class="text-light f-hd"> Quick Link</h3>
+                
+                <ul >
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="./Contact-us.html">Contact Us</a></li>
+                        <li><a href="./about_us.html">About us</a></li>                   
+                </ul>
+      
+            </div>
+            <div class="col-md-3 r-col">
+              <h3 class="text-light f-hd"> Quick Link</h3>
+              
+              <ul >
+                      <li><a href="#">Bus</a></li>
+                      <li><a href="#">Offer</a></li>                  
+              </ul>
+      
+          </div>
+            <div class="col-md-3 r-col">
+                <h3 class="text-light f-hd"> Follow Us</h3>
+                <div class="social-link">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        <div class="text-center dvlp">
+          <h6 class="text-light  dvlp-h">Created By <a href="#" class="text-light">Ashish Kumar Nayak</a> , <a href="#" class="text-light">Sourav Parida</a> , <a href="#" class="text-light">Gyana Ranja Sahoo</a> and Colaborated with <a href="#" class="text-light"><strong>Cliverware.pvt.ltd</strong></a> </h6>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="./Assets/Bootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/20d83083d1.js" crossorigin="anonymous"></script>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>
