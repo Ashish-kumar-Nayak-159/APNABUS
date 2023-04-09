@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="refresh" content="3600"> -->
+    <link rel="icon" type="image/png" href="./Assets/image/icons2.png">
+    <title>Offer</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./offer.css">
+    <!--getbootstrap css link start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Offline Bootstrap-->
+    <link rel="stylesheet" href="./Assets/Bootstrap/css/bootstrap.min.css">
+    <!--getbootstrap css link start-->
+    <!--icons8.com font Awsome link start-->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!--icons8.com font Awsome link end-->
+    <link rel="stylesheet" href="./loader.css">
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+
+<body onload="myfun()">
+    <div id="loading">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+    </div>
+
+    <header>
+        <!--Heading part-->
+        <section class="apna-bus-navbar fw-semibold">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <!-- <div class="logo_bg"></div> -->
+                        <!-- APNABUS  -->
+                        <img class="logo_bg" src="./Assets/image/s-logo.png" width="75%" height="50%" alt="APNABUS">
+                    </a>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Menu Nav bar start -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="mun nav-link active" aria-current="page" href="./index.html">Home</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mun nav-link" aria-current="page" href="./about_us.html">About Us</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mun nav-link" aria-current="page" href="#">Bus</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mun nav-link" aria-current="page" href="./offer.html">Offer</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="mun nav-link" aria-current="page" href="./Contact-us.html ">Contact Us</a>
+                                <div class="line"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a type="button" class="nav nav-link text-light" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Login/Register
+                                </a>
+                                <!--Toggle-->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Login For User</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="Enter email"
+                                                            required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Password</label>
+                                                        <input type="password" class="form-control"
+                                                            id="exampleInputPassword1" placeholder="Password" required>
+                                                    </div>
+                                                    <div class="form-group mt-3">
+                                                        <button type="button" class="btn btn-primary "
+                                                            data-bs-dismiss="modal">Login</button>
+
+                                                    </div>
+                                                    <div class="form-group py-3">
+                                                        <a href="#" class="forgot ">Forget Password</a>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <a href="#" class="">Don't Have an Account ;</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="./user-register.html" class="btn btn-primary">Register</a>
+                                                <a type="submit" class="btn btn-info text-light">Agent Login</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Menu Nav bar end -->
+                </div>
+            </nav>
+        </section>
+    </header>
+    <div class="container">
+        <h3><b>50% OFF IN FIRST BOOK</b></h3>
+    </div>
+    <!-- Main Body -->
+    <section class="happy">
+        <div class="container">
+
+            <!-- menu -->
+            <nav>
+                <div class="nav nav-tabs d-flex justify-content-center my-4" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-sub-tab" data-bs-toggle="tab" data-bs-target="#nav-sub"
+                        type="button" role="tab" aria-controls="nav-sub" aria-selected="true">Subscription
+                        Basis</button>
+                    <button class="nav-link" id="nav-fas-tab" data-bs-toggle="tab" data-bs-target="#nav-fas"
+                        type="button" role="tab" aria-controls="nav-fas" aria-selected="false">Fastival Basis</button>
+                    <button class="nav-link" id="nav-pak-tab" data-bs-toggle="tab" data-bs-target="#nav-pak"
+                        type="button" role="tab" aria-controls="nav-pak" aria-selected="false">Package Basis</button>
+                    <button class="nav-link" id="nav-spc-tab" data-bs-toggle="tab" data-bs-target="#nav-spc"
+                        type="button" role="tab" aria-controls="nav-spc" aria-selected="false">Special Holiday
+                        Offer</button>
+                    <button class="nav-link" id="nav-frnd-tab" data-bs-toggle="tab" data-bs-target="#nav-frnd"
+                        type="button" role="tab" aria-controls="nav-frnd" aria-selected="false">Ticket For
+                        Friend</button>
+                </div>
+            </nav>
+            <div class="tab-content mb-5" id="nav-tabContent">
+                <!-- For Subscription Basis Content -->
+                <div class="tab-pane fade show active" id="nav-sub" role="tabpanel" aria-labelledby="nav-sub-tab">
+                    <!-- <div class="container"> -->
+                    <div class="container my-5 ">
+
+                        <div class="contact1 bg-light px-5 py-5 ">
+                            <form class="row g-2 my-5 py-4" id="subscription_data">
+                                <div class="col-sm-6 from_box">
+                                    <div class="form-floating" onmousemove="hide()">
+                                        <span class="r_from" id="r_from"><b>Enter Starting Point !</b></span>
+                                        <input type="text" class="form-control" id="from" name="from" placeholder="From"
+                                            required>
+                                        <label for="from " class="form-label"><b>From</b></label>
+                                    </div>
+                                    <div class="swip_arrow"></div>
+                                </div>
+                                <div class="col-sm-6 to_box">
+                                    <div class="form-floating" onmousemove="hide1()">
+                                        <span class="r_to" id="r_to"><b>Enter Destination Point !</b></span>
+                                            <input type="text" class="form-control" id="to" name="to" placeholder="To"
+                                            required>
+                                        <label for="to" class="form-label"><b>To</b></label>
+                                    </div>
+                                    <div class="swip_arrow1"></div>
+
+                                </div>
+
+                                <div class="col-3 ">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="floatingInput s-date" name="s-date"
+                                            placeholder="Enter Subscription starting date" required>
+                                        <label for="floatingInput" class="">Subscription starting date</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-2 Seat_cont">
+                                        <div class="form-floating">
+                                            <div class="col-auto my-1">
+                                                <label class="mr-sm-2" for="inlineFormCustomSelect">Seats</label>
+                                                <select class="custom-select mr-sm-3" id="seat" name="seat" required>
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                <div class="col-md-3 way_cont">
+                                    <div class="input-group mb-3">
+                                        <!-- Ways 1/2 -->
+                                        <div class=" input-group-prepend ">
+                                            <div class="input-group-text">
+
+                                                <input type="checkbox" id="way" name="way" value="1"
+                                                    aria-label="Checkbox for following text input">
+                                                <label for="way" aria-valuetext="Oneway" class="lbl_way">Return</label>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <div class="d-grid gap-1 col-md-2 ">
+                                            <button type="button" class="btn btn-primary" id="nextBtn" name="nextBtn"
+                                                onclick="display_offer()">Next</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 sub_content1" id="enable-me">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Basic Plans</h5>
+                                                    <p class="card-text">Est 300/- week<br /><b>5% OFF</b></p>
+
+                                                    
+                                                    <!-- <button type="submit" onclick="book_conform()" class="btn btn-primary">Book
+                                                            Now</button> -->
+                                                    
+                                                            <!-- Button trigger modal -->
+
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#staticBackdrop">
+                                                        Book Now
+                                                    </button>
+
+                                                    <!-- Modal -->
+
+                                                    <div class="modal fade " id="staticBackdrop"
+                                                        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-5"
+                                                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                                                        <div class="modal-dialog modal-lg">
+
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="staticBackdropLabel">
+                                                                        Avalable Bus Details</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="container">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <p><b>You don't want to Travel :</b></p>
+                                                                            </div>
+                                                                            <div class="col-md-8 days">
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Su</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Mo</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Tu</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">We</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Th</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Fr</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Sa</label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-3">
+                                                                                <p><b>Aditional Leave :</b></p>
+                                                                            </div>
+                                                                            <div class="col-md-9 ad_leave">
+                                                                                <mark>Comming Soon</mark>
+                                                                            </div>
+
+                                                                            <!----------------------------------Avalable Buses----------------------------------------->
+
+                                                                            
+                                                                            <!------------------Avalable Bus 1 ------------------------------------->
+
+                                                                            <div class="col-sm-12">
+                                                                                <hr>
+                                                                                <div class="col-sm-12 avalable">
+                                                                                    <h5>: avalable Bus :</h5>
+                                                                                </div>
+                                                                                <div class="col-sm-12">
+                                                                                    <h5>Bus Name : <Span>Garuda
+                                                                                            (AC)</Span>
+                                                                                        -
+                                                                                        <span>OD-05-A-2023</span>
+                                                                                    </h5>
+                                                                                    <h4>Paradeep To Cuttack</h4>
+                                                                                    <div class="place">
+                                                                                        <div
+                                                                                            class="container text-center">
+                                                                                            <div
+                                                                                                class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center">
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Paradeep
+                                                                                                                Bust
+                                                                                                                Stand
+                                                                                                            </p>
+                                                                                                            <p>5:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-1
+                                                                                                            </p>
+                                                                                                            <p>5:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-2
+                                                                                                            </p>
+                                                                                                            <p>5:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-3
+                                                                                                            </p>
+                                                                                                            <p>5:45AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-4
+                                                                                                            </p>
+                                                                                                            <p>6:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-5
+                                                                                                            </p>
+                                                                                                            <p>6:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-6
+                                                                                                            </p>
+                                                                                                            <p>6:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-7
+                                                                                                            </p>
+                                                                                                            <p>6:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-8
+                                                                                                            </p>
+                                                                                                            <p>7:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-9
+                                                                                                            </p>
+                                                                                                            <p>7:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-10
+                                                                                                            </p>
+                                                                                                            <p>7:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Badambadi
+                                                                                                                Cuttack
+                                                                                                            </p>
+                                                                                                            <p>8:00AM
+                                                                                                            </p>
+
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!------------------Avalable Bus 2 ------------------------------------->
+
+                                                                            <div class="col-sm-12">
+                                                                                <hr>
+                                                                                <div class="col-sm-12 avalable">
+                                                                                    <h5>: avalable Bus :</h5>
+                                                                                </div>
+                                                                                <div class="col-sm-12">
+                                                                                    <h5>Bus Name : <Span>Garuda
+                                                                                            (AC)</Span>
+                                                                                        -
+                                                                                        <span>OD-05-A-2023</span>
+                                                                                    </h5>
+                                                                                    <h4>Paradeep To Cuttack</h4>
+                                                                                    <div class="place">
+                                                                                        <div
+                                                                                            class="container text-center">
+                                                                                            <div
+                                                                                                class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center">
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Paradeep
+                                                                                                                Bust
+                                                                                                                Stand
+                                                                                                            </p>
+                                                                                                            <p>5:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-1
+                                                                                                            </p>
+                                                                                                            <p>5:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-2
+                                                                                                            </p>
+                                                                                                            <p>5:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-3
+                                                                                                            </p>
+                                                                                                            <p>5:45AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-4
+                                                                                                            </p>
+                                                                                                            <p>6:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-5
+                                                                                                            </p>
+                                                                                                            <p>6:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-6
+                                                                                                            </p>
+                                                                                                            <p>6:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-7
+                                                                                                            </p>
+                                                                                                            <p>6:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-8
+                                                                                                            </p>
+                                                                                                            <p>7:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-9
+                                                                                                            </p>
+                                                                                                            <p>7:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-10
+                                                                                                            </p>
+                                                                                                            <p>7:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Badambadi
+                                                                                                                Cuttack
+                                                                                                            </p>
+                                                                                                            <p>8:00AM
+                                                                                                            </p>
+
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <!------------------Avalable Bus 3 ------------------------------------->
+
+
+                                                                            <div class="col-sm-12">
+                                                                                <hr>
+                                                                                <div class="col-sm-12 avalable">
+                                                                                    <h5>: avalable Bus :</h5>
+                                                                                </div>
+                                                                                <div class="col-sm-12">
+                                                                                    <h5>Bus Name : <Span>Garuda
+                                                                                            (AC)</Span>
+                                                                                        -
+                                                                                        <span>OD-05-A-2023</span>
+                                                                                    </h5>
+                                                                                    <h4>Paradeep To Cuttack</h4>
+                                                                                    <div class="place">
+                                                                                        <div
+                                                                                            class="container text-center">
+                                                                                            <div
+                                                                                                class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center">
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Paradeep
+                                                                                                                Bust
+                                                                                                                Stand
+                                                                                                            </p>
+                                                                                                            <p>5:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-1
+                                                                                                            </p>
+                                                                                                            <p>5:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-2
+                                                                                                            </p>
+                                                                                                            <p>5:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-3
+                                                                                                            </p>
+                                                                                                            <p>5:45AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-4
+                                                                                                            </p>
+                                                                                                            <p>6:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-5
+                                                                                                            </p>
+                                                                                                            <p>6:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-6
+                                                                                                            </p>
+                                                                                                            <p>6:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-7
+                                                                                                            </p>
+                                                                                                            <p>6:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-8
+                                                                                                            </p>
+                                                                                                            <p>7:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-9
+                                                                                                            </p>
+                                                                                                            <p>7:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-10
+                                                                                                            </p>
+                                                                                                            <p>7:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Badambadi
+                                                                                                                Cuttack
+                                                                                                            </p>
+                                                                                                            <p>8:00AM
+                                                                                                            </p>
+
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                            <!------------------Avalable Bus 4 ------------------------------------->
+
+                                                                            <div class="col-sm-12">
+                                                                                <hr>
+                                                                                <div class="col-sm-12 avalable">
+                                                                                    <h5>: avalable Bus :</h5>
+                                                                                </div>
+                                                                                <div class="col-sm-12">
+                                                                                    <h5>Bus Name : <Span>Garuda
+                                                                                            (AC)</Span>
+                                                                                        -
+                                                                                        <span>OD-05-A-2023</span>
+                                                                                    </h5>
+                                                                                    <h4>Paradeep To Cuttack</h4>
+                                                                                    <div class="place">
+                                                                                        <div
+                                                                                            class="container text-center">
+                                                                                            <div
+                                                                                                class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 justify-content-center">
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Paradeep
+                                                                                                                Bust
+                                                                                                                Stand
+                                                                                                            </p>
+                                                                                                            <p>5:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-1
+                                                                                                            </p>
+                                                                                                            <p>5:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-2
+                                                                                                            </p>
+                                                                                                            <p>5:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-3
+                                                                                                            </p>
+                                                                                                            <p>5:45AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-4
+                                                                                                            </p>
+                                                                                                            <p>6:00AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-5
+                                                                                                            </p>
+                                                                                                            <p>6:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-6
+                                                                                                            </p>
+                                                                                                            <p>6:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-7
+                                                                                                            </p>
+                                                                                                            <p>6:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-8
+                                                                                                            </p>
+                                                                                                            <p>7:20AM
+                                                                                                            </p>
+                                                                                                        </a>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-9
+                                                                                                            </p>
+                                                                                                            <p>7:35AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Stopage-10
+                                                                                                            </p>
+                                                                                                            <p>7:50AM
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="col bg-light me-md-1">
+                                                                                                    <div class="p-3">
+                                                                                                        <a href="#">
+                                                                                                            <p>Badambadi
+                                                                                                                Cuttack
+                                                                                                            </p>
+                                                                                                            <p>8:00AM
+                                                                                                            </p>
+
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary">ConForm Book</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ---------------------------------------------Standard----------------------------------------- -->
+                                        <div class="col-sm-4">
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Standard Plans</h5>
+                                                    <p class="card-text">Est 1500/- Month<br /><b>10% OFF</b></p>
+                                                    <!-- <button type="submit" onclick="book_conform()" class="btn btn-primary">Book
+                                                            Now</button> -->
+
+                                                    <!-- Button trigger modal -->
+
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#staticBackdrop">
+                                                        Book Now
+                                                    </button>
+
+                                                    <!-- Modal -->
+                                                    <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> -->
+
+                                                    <!-- <div class="modal fade" id="staticBackdrop"
+                                                        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-5"
+                                                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="staticBackdropLabel">
+                                                                        Modal title</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="container">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <p><b>Select the Day you don't want
+                                                                                        to Travel :</b></p>
+                                                                            </div>
+                                                                            <div class="col-md-12 days">
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Su</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Mo</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Tu</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">We</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Th</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Fr</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Sa</label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-2">
+                                                                                <p><b>Aditional Leave :</b></p>
+                                                                            </div>
+                                                                            <div class="col-md-10 ad_leave">
+                                                                                <input type="month" name="" id="">
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary">Understood</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-------------------------------------------Quater ------------------------------------------------- -->
+
+                                        <div class="col-sm-4">
+                                            <div class="card text-center">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Quater Plans</h5>
+                                                    <p class="card-text">Est 5,000/- 3 Months<br /><b>20% OFF</b>
+                                                    </p>
+                                                    <!-- <button type="submit" onclick="book_conform()" class="btn btn-primary">Book
+                                                            Now</button> -->
+                                                    <!-- Button trigger modal -->
+
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#staticBackdrop">
+                                                        Book Now
+                                                    </button>
+
+
+                                                    <!-- Modal -->
+                                                    <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> -->
+
+                                                    <!-- <div class="modal fade" id="staticBackdrop"
+                                                        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-5"
+                                                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="staticBackdropLabel">
+                                                                        Your Choice is Here</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="container">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <p><b>you don't want
+                                                                                        to Travel :</b></p>
+                                                                            </div>
+
+                                                                            <div class="col-md-12 days">
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Su</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Mo</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Tu</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">We</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox1">Th</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Fr</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="form-check form-check-inline">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox"
+                                                                                        id="inlineCheckbox2"
+                                                                                        value="option2">
+                                                                                    <label class="form-check-label"
+                                                                                        for="inlineCheckbox2">Sa</label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-2">
+                                                                                <p><b>Aditional Leave :</b></p>
+                                                                            </div>
+                                                                            <div class="col-md-10 ad_leave">
+                                                                                <input type="month" name="" id="">
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button"
+                                                                        class="btn btn-primary">Understood</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-12 choose_1">
+
+                                </div> -->
+
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <!-- </div> -->
+                </div>
+                <!-- For Fastival Basis Content -->
+                <div class="tab-pane fade" id="nav-fas" role="tabpanel" aria-labelledby="nav-fas-tab">
+                    <!-- 2 -->
+                    <div class="row text-center mt-5">
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?festival"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Durga Puja Offer</h5>
+                                    <p class="card-text">Every ride<br /><b> Discout 12% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?festival"
+                                    alt="KAli Puja Offer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kali Puja Offer</h5>
+                                    <p class="card-text">Every ride<br /><b> Discout 13% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?festival"
+                                    alt="Ratha Yatra">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ratha Yatra</h5>
+                                    <p class="card-text">Every ride<br /><b> Discout 11% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?festival"
+                                    alt="Holi Offer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Holi Offer</h5>
+                                    <p class="card-text">Every ride<br /><b> Discout 17% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- For Package Basis Content -->
+                <div class="tab-pane fade" id="nav-pak" role="tabpanel" aria-labelledby="nav-pak-tab">
+                    <!-- 3 -->
+                    <div class="row text-center mt-5">
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?holiday,package"
+                                    alt="Family Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Family Package</h5>
+                                    <p class="card-text">Buy 4 Ticket get<br /><b> Discout 20% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?holiday,package"
+                                    alt="Special Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special Package</h5>
+                                    <p class="card-text"> Buy 10 Ticket get<br /><b> Discout 25% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?holiday,package"
+                                    alt="Friends Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Friends Package</h5>
+                                    <p class="card-text">get<br /><b> Discout 20% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?holiday,package"
+                                    alt="Special Package">
+                                <div class="card-body">
+                                    <h5 class="card-title">Handicaft Package</h5>
+                                    <p class="card-text">per Ticket get<br /><b> Discout 15% OFF</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- For Special Basis Content -->
+                <div class="tab-pane fade" id="nav-spc" role="tabpanel" aria-labelledby="nav-spc-tab">
+                    <!-- 4 -->
+                    <div class="row text-center mt-5">
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/700x900/?holiday,travel"
+                                    alt="New Year Offer">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Year Offer</h5>
+                                    <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted"><a href="#">Book Now</a></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/700x900/?holiday,travel"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">New Year Offer</h5>
+                                        <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><a href="#">Book Now</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/700x900/?holiday,travel"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">New Year Offer</h5>
+                                        <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><a href="#">Book Now</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/700x900/?holiday,travel"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">New Year Offer</h5>
+                                        <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><a href="#">Book Now</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- For Ticket For Friends Basis Content -->
+                <div class="tab-pane fade" id="nav-frnd" role="tabpanel" aria-labelledby="nav-frnd-tab">
+                    <!-- 5 -->
+                    <div class="row text-center mt-5">
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?ticket,friends"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ticket For Friends</h5>
+                                        <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><a href="#">Book Now</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?ticket,friends"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ticket For Friends</h5>
+                                        <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><a href="#">Book Now</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?ticket,friends"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ticket For Friends</h5>
+                                        <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><a href="#">Book Now</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md ico3">
+                            <div class="card">
+                                <img class="card-img-top" src="https://source.unsplash.com/800x850/?ticket,friends"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ticket For Friends</h5>
+                                        <p class="card-text"><b>Book 1 get 1 free</b></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><a href="#">Book Now</a></small>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- </main> -->
+
+
+    <footer class="footer">
+        <div class="Container cont">
+            <div class="row r1">
+                <div class="col-md-3 r-col">
+                    <h3 class="text-light f-hd"> Service</h3>
+                    <ul>
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">Condoctor</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 r-col">
+                    <h3 class="text-light f-hd"> Quick Link</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="./Contact-us.html">Contact Us</a></li>
+                        <li><a href="./about_us.html">About us</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 r-col">
+                    <h3 class="text-light f-hd"> Quick Link</h3>
+
+                    <ul>
+                        <li><a href="#">Bus</a></li>
+                        <li><a href="./offer.html">Offer</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 r-col">
+                    <h3 class="text-light f-hd"> Follow Us</h3>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="text-center dvlp">
+            <hr class="text-light" />
+            <h6 class="text-light  dvlp-h">Created By <a href="#" class="text-light">Ashish Kumar Nayak</a> , <a
+                    href="#" class="text-light">Sourav Parida</a> , <a href="#" class="text-light">Gyana Ranja Sahoo</a>
+                and Colaborated with <a href="#" class="text-light"><strong>Cliverware.pvt.ltd</strong></a> </h6>
+        </div>
+    </footer>
+
+
+
+    <script src="./offer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./Assets/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/20d83083d1.js" crossorigin="anonymous"></script>
+    <script src="./loader.js"></script>
+</body>
+
+</html>

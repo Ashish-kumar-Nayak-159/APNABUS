@@ -79,21 +79,21 @@
 /* content section */
 
 .content-right .image1{
-    height: 50vh;
-    margin-top: 3.5rem;
+    height: 40vh;
+    margin-top: 1.5rem;
     margin-left:2rem;
-    border-radius: 10rem;
+    border-radius: 12rem;
 }
 .left-content1 p{
     text-align: justify;
     margin-top: 2rem;
 }
 .content-right .image2{
-   height: 50vh;
+   height: 40vh;
     background-position:center;
     background-size: cover;
-    border-radius: 10rem;
-   margin-top: 5rem;
+    border-radius: 12rem;
+   margin-top: 3rem;
 }
 
 

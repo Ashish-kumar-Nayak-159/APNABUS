@@ -1,294 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3600">
-    <link rel="icon" type="image/png" href="./Assets/image/icons2.png">
-    <title>About Us</title>
-    <!--getbootstrap css link start-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!--Offline Bootstrap-->
-    <link rel="stylesheet" href="./Assets/Bootstrap/css/bootstrap.min.css">
-<!--getbootstrap css link start-->
-<!--icons8.com font Awsome link start-->
-<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-<!--icons8.com font Awsome link end-->
-<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-<link rel="stylesheet" href="./about.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="3600">
+  <link rel="icon" type="image/png" href="./Assets/image/icons2.png">
+  <title>About Us</title>
+  <!--getbootstrap css link start-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--Offline Bootstrap-->
+  <link rel="stylesheet" href="./Assets/Bootstrap/css/bootstrap.min.css">
+  <!--getbootstrap css link start-->
+  <!--icons8.com font Awsome link start-->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!--icons8.com font Awsome link end-->
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./loader.css">
+  
 </head>
-<body>
+
+<body onload="myfun()">
+  <div id="loading">
+    <div class="spinner-grow text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
   <header>
     <!--Heading part-->
     <section class="apna-bus-navbar fw-semibold">
       <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <!-- <div class="logo_bg"></div> -->
-                 <!-- APNABUS  -->
-                 <img class="logo_bg" src="./Assets/image/s-logo.png" width="75%" height="50%" alt="APNABUS">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <!-- <div class="logo_bg"></div> -->
+            <!-- APNABUS  -->
+            <img class="logo_bg" src="./Assets/image/s-logo.png" width="75%" height="50%" alt="APNABUS">
+          </a>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Menu Nav bar start -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="mun nav-link active" aria-current="page" href="./index.html">Home</a>
+                <div class="line"></div>
+              </li>
+              <li class="nav-item">
+                <a class="mun nav-link" aria-current="page" href="./about_us.html">About Us</a>
+                <div class="line"></div>
+              </li>
+              <li class="nav-item">
+                <a class="mun nav-link" aria-current="page" href="#">Bus</a>
+                <div class="line"></div>
+              </li>
+              <li class="nav-item">
+                <a class="mun nav-link" aria-current="page" href="./offer.html">Offer</a>
+                <div class="line"></div>
+              </li>
+              <li class="nav-item">
+                <a class="mun nav-link" aria-current="page" href="./Contact-us.html ">Contact Us</a>
+                <div class="line"></div>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="nav nav-link text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Login/Register
                 </a>
-              
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--Menu Nav bar start -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="mun nav-link active" aria-current="page" href="./index.html">Home</a>
-                    <div class="line" ></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="mun nav-link" aria-current="page" href="./about_us.html">About Us</a>
-                    <div class="line"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="mun nav-link" aria-current="page" href="#">Bus</a>
-                    <div class="line"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="mun nav-link" aria-current="page" href="#">Offer</a>
-                    <div class="line"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="mun nav-link" aria-current="page" href="./Contact-us.html ">Contact Us</a>
-                    <div class="line"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a type="button" class="nav nav-link text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Login/Register
-                    </a>
-                    <!--Toggle-->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Login For User</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!--Toggle-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login For User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="#">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp" placeholder="Enter email" required>
                           </div>
-                          <div class="modal-body">
-                            <form action="#">
-                                <div class="form-group">
-                                  <label for="exampleInputEmail1">Email address</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputPassword1">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                                </div>
-                                <div class="form-group mt-3">
-                                  <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Login</button>
-
-                                </div>
-                                <div class="form-group py-3">
-                                  <a href="#" class="forgot ">Forget Password</a>
-                                </div>
-
-                              </form>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                              placeholder="Password" required>
                           </div>
-                          <div class="modal-footer">
-                            <a href="./user-register.html" class="btn btn-primary" >Register</a>
-                            <a type="submit" class="btn btn-info text-light">Agent Login</a>
+                          <div class="form-group mt-3">
+                            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Login</button>
+
                           </div>
-                        </div>
+                          <div class="form-group py-3">
+                            <a href="#" class="forgot ">Forget Password</a>
+                          </div>
+
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="./user-register.html" class="btn btn-primary">Register</a>
+                        <a type="submit" class="btn btn-info text-light">Agent Login</a>
                       </div>
                     </div>
-                    <div class="line"></div>
-                  </li>
-                </ul>
-              </div>
-                <!--Menu Nav bar end -->
-            </div>
-          </nav>
+                  </div>
+                </div>
+                <div class="line"></div>
+              </li>
+            </ul>
+          </div>
+          <!--Menu Nav bar end -->
+        </div>
+      </nav>
     </section>
   </header>
 
-<!--Header end-->
+  <!--Header end-->
 
-<!--Main Body-->
-<section class="about-banner">
-  <div class="container">
-    <h3 class="text-center text-light">About Us</h3>
-    <div class="line1"></div>
-  </div>
-</section>
-
-<!-- container 1 -->
-      <section class="about-content">
-        <div class="container">
-            <div class="row bg">
-                <div class="col-md-8 left-content1">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi laboriosam maiores dolores delectus sapiente temporibus aperiam? Voluptatum nemo vitae eum veritatis soluta magni unde, accusamus iste minus maiores tempora fuga. Expedita, quo quos optio ut, molestiae repudiandae natus ad, quidem maxime animi ullam dolores deserunt veniam corporis sit voluptatem esse pariatur beatae praesentium eum! Inventore dolorem aliquam totam labore impedit ullam eius debitis? Sed ea optio consectetur ex incidunt iure nihil amet ab.<br><br> Magnam blanditiis exercitationem necessitatibus mollitia ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem itaque iure obcaecati placeat alias nisi laboriosam dolorum aliquid, deleniti sit optio illo. Nobis, aliquam iste. Repellat autem ipsam obcaecati. Culpa voluptatum deserunt perspiciatis saepe eos quisquam ex quod ea sunt esse nam, nesciunt praesentium quas inventore enim <br><br>sit asperiores quae tenetur itaque eaque! Numquam itaque natus magnam, ratione mollitia aliquam provident, dicta perspiciatis sed earum ipsam consectetur accusantium minus odio facere, praesentium est deserunt ipsa? Esse nesciunt iste omnis delectus ex vel reiciendis dolores id corrupti doloribus. Eum, impedit inventore quidem cumque dolore ab perferendis eos voluptatum quisquam laboriosam laborum?</p>
-                  </div>
-                  <div class="col-md-4 content-right">
-                      <img class="image1" src="./Assets/image/logos2.png"  alt="image1" >
-                </div>
-            </div>
-        </div>
-
-      </section>
-
-<!--container 2-->
-<section class="about-content">
-  <div class="container">
-    <div class="row bg">
-      <div class="col-md-4 content-right">
-        <img class="image2" src="./Assets/image/pic-4.png" height="3rem" alt="image2" >
-      </div>
-      <div class="col-md-8 left-content1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi laboriosam maiores dolores delectus sapiente temporibus aperiam? Voluptatum nemo vitae eum veritatis soluta magni unde, accusamus iste minus maiores tempora fuga. Expedita, quo quos optio ut, molestiae repudiandae natus ad, quidem maxime animi ullam dolores deserunt veniam corporis sit voluptatem esse pariatur beatae praesentium eum! Inventore dolorem aliquam totam labore impedit ullam eius debitis? Sed ea optio consectetur ex incidunt iure nihil amet ab.<br><br> Magnam blanditiis exercitationem necessitatibus mollitia ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem itaque iure obcaecati placeat alias nisi laboriosam dolorum aliquid, deleniti sit optio illo. Nobis, aliquam iste. Repellat autem ipsam obcaecati. Culpa voluptatum deserunt perspiciatis saepe eos quisquam ex quod ea sunt esse nam, nesciunt praesentium quas inventore enim <br><br>sit asperiores quae tenetur itaque eaque! Numquam itaque natus magnam, ratione mollitia aliquam provident, dicta perspiciatis sed earum ipsam consectetur accusantium minus odio facere, praesentium est deserunt ipsa? Esse nesciunt iste omnis delectus ex vel reiciendis dolores id corrupti doloribus. Eum, impedit inventore quidem cumque dolore ab perferendis eos voluptatum quisquam laboriosam laborum?</p>
-      </div>
+  <!--Main Body-->
+  <section class="about-banner">
+    <div class="container">
+      <h3 class="text-center text-light">About Us</h3>
+      <div class="line1"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- container 3 -->
-<section class="about-content">
-  <div class="container">
+  <!-- container 1 -->
+  <section class="about-content">
+    <div class="container">
       <div class="row bg">
-          <div class="col-md-8 left-content1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi laboriosam maiores dolores delectus sapiente temporibus aperiam? Voluptatum nemo vitae eum veritatis soluta magni unde, accusamus iste minus maiores tempora fuga. Expedita, quo quos optio ut, molestiae repudiandae natus ad, quidem maxime animi ullam dolores deserunt veniam corporis sit voluptatem esse pariatur beatae praesentium eum! Inventore dolorem aliquam totam labore impedit ullam eius debitis? Sed ea optio consectetur ex incidunt iure nihil amet ab.<br><br> Magnam blanditiis exercitationem necessitatibus mollitia ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem itaque iure obcaecati placeat alias nisi laboriosam dolorum aliquid, deleniti sit optio illo. Nobis, aliquam iste. Repellat autem ipsam obcaecati. Culpa voluptatum deserunt perspiciatis saepe eos quisquam ex quod ea sunt esse nam, nesciunt praesentium quas inventore enim <br><br>sit asperiores quae tenetur itaque eaque! Numquam itaque natus magnam, ratione mollitia aliquam provident, dicta perspiciatis sed earum ipsam consectetur accusantium minus odio facere, praesentium est deserunt ipsa? Esse nesciunt iste omnis delectus ex vel reiciendis dolores id corrupti doloribus. Eum, impedit inventore quidem cumque dolore ab perferendis eos voluptatum quisquam laboriosam laborum?</p>
-            </div>
-            <div class="col-md-4 content-right">
-                <img class="image1" src="./Assets/image/pic-3.png"  alt="image1" >
-          </div>
+        <div class="col-md-8 left-content1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi laboriosam maiores dolores
+            delectus sapiente temporibus aperiam? Voluptatum nemo vitae eum veritatis soluta magni unde, accusamus iste
+            minus maiores tempora fuga. Expedita, quo quos optio ut, molestiae repudiandae natus ad, quidem maxime animi
+            ullam dolores deserunt veniam corporis sit voluptatem esse pariatur beatae praesentium eum! Inventore
+            dolorem aliquam totam labore impedit ullam eius debitis? Sed ea optio consectetur ex incidunt iure nihil
+            amet ab.<br><br> Magnam blanditiis exercitationem necessitatibus mollitia ratione! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Autem itaque iure obcaecati placeat alias nisi laboriosam dolorum
+            aliquid, deleniti sit optio illo. Nobis, aliquam iste. Repellat autem ipsam obcaecati. Culpa voluptatum
+            deserunt perspiciatis saepe eos quisquam ex quod ea sunt esse nam, nesciunt praesentium quas inventore enim
+            <br><br>sit asperiores quae tenetur itaque eaque! Numquam itaque natus magnam, ratione mollitia aliquam
+            provident, dicta perspiciatis sed earum ipsam consectetur accusantium minus odio facere, praesentium est
+            deserunt ipsa? Esse nesciunt iste omnis delectus ex vel reiciendis dolores id corrupti doloribus. Eum,
+            impedit inventore quidem cumque dolore ab perferendis eos voluptatum quisquam laboriosam laborum?</p>
+        </div>
+        <div class="col-md-4 content-right">
+          <img class="image1" src="./Assets/image/pic-1.png" alt="image1">
+        </div>
       </div>
-  </div>
-
-</section>
-
-<!--Animated Card-->
-<section>
-  <div class="row card-row">
-<!--card 1-->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="img-bg">
-          <img src="./Assets/image/pic-4.png" class="card-img" alt="images" >
-          <h5 class="text-center py-4">--Name--</h5>
-        </div>
-        <div class="card-body">
-            <h1 class="card-title">Heading</h1>
-            
-            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos?</p>
-            <div class="social-link">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-linkedin-in"></i></a> 
-           </div>
-         </div>
-     </div>
     </div>
-<!--card 2-->
-    <div class="col-md-4 ">
-      <div class="card">
-        <div class="img-bg">
-          <img src="./Assets/image/pic-2.png" class="card-img" alt="images" >
-          <h5 class="text-center py-4">--Name--</h5>
+
+  </section>
+
+  <!--container 2-->
+  <section class="about-content">
+    <div class="container">
+      <div class="row bg">
+        <div class="col-md-4 content-right">
+          <img class="image2" src="./Assets/image/pic-4.png" height="3rem" alt="image2">
         </div>
-        <div class="card-body">
-            <h1 class="card-title">Heading</h1>
-            
-            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos?</p>
-            <div class="social-link">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-linkedin-in"></i></a> 
-           </div>
-         </div>
-
-     </div>
-    </div>
-<!--card 3-->
-    <div class="col-md-4 ">
-      <div class="card">
-        <div class="img-bg">
-          <img src="./Assets/image/pic-1.png" class="card-img" alt="images" >
-          <h5 class="text-center py-4">--Name--</h5>
+        <div class="col-md-8 left-content1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi laboriosam maiores dolores
+            delectus sapiente temporibus aperiam? Voluptatum nemo vitae eum veritatis soluta magni unde, accusamus iste
+            minus maiores tempora fuga. Expedita, quo quos optio ut, molestiae repudiandae natus ad, quidem maxime animi
+            ullam dolores deserunt veniam corporis sit voluptatem esse pariatur beatae praesentium eum! Inventore
+            dolorem aliquam totam labore impedit ullam eius debitis? Sed ea optio consectetur ex incidunt iure nihil
+            amet ab.<br><br> Magnam blanditiis exercitationem necessitatibus mollitia ratione! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Autem itaque iure obcaecati placeat alias nisi laboriosam dolorum
+            aliquid, deleniti sit optio illo. Nobis, aliquam iste. Repellat autem ipsam obcaecati. Culpa voluptatum
+            deserunt perspiciatis saepe eos quisquam ex quod ea sunt esse nam, nesciunt praesentium quas inventore enim
+            <br><br>sit asperiores quae tenetur itaque eaque! Numquam itaque natus magnam, ratione mollitia aliquam
+            provident, dicta perspiciatis sed earum ipsam consectetur accusantium minus odio facere, praesentium est
+            deserunt ipsa? Esse nesciunt iste omnis delectus ex vel reiciendis dolores id corrupti doloribus. Eum,
+            impedit inventore quidem cumque dolore ab perferendis eos voluptatum quisquam laboriosam laborum?</p>
         </div>
-        <div class="card-body">
-            <h1 class="card-title">Heading</h1>
-            
-            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos?</p>
-            <div class="social-link">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-linkedin-in"></i></a> 
-           </div>
-         </div>
-
-     </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- container 3 -->
+  <section class="about-content">
+    <div class="container">
+      <div class="row bg">
+        <div class="col-md-8 left-content1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi laboriosam maiores dolores
+            delectus sapiente temporibus aperiam? Voluptatum nemo vitae eum veritatis soluta magni unde, accusamus iste
+            minus maiores tempora fuga. Expedita, quo quos optio ut, molestiae repudiandae natus ad, quidem maxime animi
+            ullam dolores deserunt veniam corporis sit voluptatem esse pariatur beatae praesentium eum! Inventore
+            dolorem aliquam totam labore impedit ullam eius debitis? Sed ea optio consectetur ex incidunt iure nihil
+            amet ab.<br><br> Magnam blanditiis exercitationem necessitatibus mollitia ratione! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Autem itaque iure obcaecati placeat alias nisi laboriosam dolorum
+            aliquid, deleniti sit optio illo. Nobis, aliquam iste. Repellat autem ipsam obcaecati. Culpa voluptatum
+            deserunt perspiciatis saepe eos quisquam ex quod ea sunt esse nam, nesciunt praesentium quas inventore enim
+            <br><br>sit asperiores quae tenetur itaque eaque! Numquam itaque natus magnam, ratione mollitia aliquam
+            provident, dicta perspiciatis sed earum ipsam consectetur accusantium minus odio facere, praesentium est
+            deserunt ipsa? Esse nesciunt iste omnis delectus ex vel reiciendis dolores id corrupti doloribus. Eum,
+            impedit inventore quidem cumque dolore ab perferendis eos voluptatum quisquam laboriosam laborum?</p>
+        </div>
+        <div class="col-md-4 content-right">
+          <img class="image1" src="./Assets/image/pic-3.png" alt="image1">
+        </div>
+      </div>
+    </div>
 
+  </section>
 
-
-
-      <!--Footer-->
-      <footer class="footer">
-        <div class="Container cont">
-            <div class="row r1">
-                <div class="col-md-3 r-col">
-                <h3 class="text-light f-hd"> Service</h3>
-                  <ul> 
-                    <li><a href="#">Admin</a></li>
-                    <li><a href="#">Condoctor</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="./login.html">Login</a></li>    
-                  </ul>
-            </div>
-            <div class="col-md-3 r-col">
-                <h3 class="text-light f-hd"> Quick Link</h3>
-                
-                <ul >
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="./Contact-us.html">Contact Us</a></li>
-                        <li><a href="./about_us.html">About us</a></li>                   
-                </ul>
-      
-            </div>
-            <div class="col-md-3 r-col">
-              <h3 class="text-light f-hd"> Quick Link</h3>
-              
-              <ul >
-                      <li><a href="#">Bus</a></li>
-                      <li><a href="#">Offer</a></li>                  
-              </ul>
-      
+  <!--Animated Card-->
+  <section>
+    <div class="row card-row">
+      <!--card 1-->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="img-bg">
+            <img src="./Assets/image/pic-4.png" class="card-img" alt="images">
+            <h5 class="text-center py-4">--Name--</h5>
           </div>
-            <div class="col-md-3 r-col">
-                <h3 class="text-light f-hd"> Follow Us</h3>
-                <div class="social-link">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a> 
-                </div>
+          <div class="card-body">
+            <h1 class="card-title">Heading</h1>
+
+            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos?
+            </p>
+            <div class="social-link">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            
+          </div>
         </div>
+      </div>
+      <!--card 2-->
+      <div class="col-md-4 ">
+        <div class="card">
+          <div class="img-bg">
+            <img src="./Assets/image/pic-2.png" class="card-img" alt="images">
+            <h5 class="text-center py-4">--Name--</h5>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">Heading</h1>
+
+            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos?
+            </p>
+            <div class="social-link">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
         </div>
-        <div class="text-center dvlp">
-          <h6 class="text-light  dvlp-h">Created By <a href="#" class="text-light">Ashish Kumar Nayak</a> , <a href="#" class="text-light">Sourav Parida</a> , <a href="#" class="text-light">Gyana Ranja Sahoo</a> and Colaborated with <a href="#" class="text-light"><strong>Cliverware.pvt.ltd</strong></a> </h6>
+      </div>
+      <!--card 3-->
+      <div class="col-md-4 ">
+        <div class="card">
+          <div class="img-bg">
+            <img src="./Assets/image/pic-1.png" class="card-img" alt="images">
+            <h5 class="text-center py-4">--Name--</h5>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">Heading</h1>
+
+            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos?
+            </p>
+            <div class="social-link">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
         </div>
-      </footer>
-   
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-      <script src="./Assets/Bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://kit.fontawesome.com/20d83083d1.js" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="Container cont">
+      <div class="row r1">
+        <div class="col-md-3 r-col">
+          <h3 class="text-light f-hd"> Service</h3>
+          <ul>
+            <li><a href="#">Admin</a></li>
+            <li><a href="#">Condoctor</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 r-col">
+          <h3 class="text-light f-hd"> Quick Link</h3>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="./Contact-us.html">Contact Us</a></li>
+            <li><a href="./about_us.html">About us</a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 r-col">
+          <h3 class="text-light f-hd"> Quick Link</h3>
+
+          <ul>
+            <li><a href="#">Bus</a></li>
+            <li><a href="./offer.html">Offer</a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 r-col">
+          <h3 class="text-light f-hd"> Follow Us</h3>
+          <div class="social-link">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="text-center dvlp">
+      <hr class="text-light" />
+      <h6 class="text-light  dvlp-h">Created By <a href="#" class="text-light">Ashish Kumar Nayak</a> , <a href="#"
+          class="text-light">Sourav Parida</a> , <a href="#" class="text-light">Gyana Ranja Sahoo</a> and Colaborated
+        with <a href="#" class="text-light"><strong>Cliverware.pvt.ltd</strong></a> </h6>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./Assets/Bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/20d83083d1.js" crossorigin="anonymous"></script>
+  <script src="./loader.js"></script>
 </body>
+
 </html>

@@ -8,17 +8,6 @@ a{
     font-size: 1rem !important;
 }
 
-/* .logo_bg{
-    content: url('./Assets/image/logo-bg.png');
-    width: 7rem !important;
-    opacity: 0.5 !important;
-    position:absolute !important;
-    top: 0.7rem;
-    margin-left:-1.8rem !important;
-    transition: 0.5s ease-out;
-
-} */
-
 .navbar-brand{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:1.3rem !important;
@@ -120,9 +109,13 @@ a{
 .p-cont{
     font-weight: 500;
 }
+.ico-row{
+    padding-top: 2.5%;
+    justify-content: center;
+}
 
 .ico1{
-    margin-right: 0.4em;
+    margin:1.5rem 0.8rem 3% 0;
     border-radius: 0.4rem;
     width: 11.4rem !important;
     box-shadow: 0px 0px 20px rgb(147, 162, 176);
@@ -187,7 +180,7 @@ a{
 
 }
 .r-arrow{
-    margin-left: 4rem !important;
+    margin-right: -1.5rem !important;
     content: url('./Assets/image/icons8-chevron-left-24.png');
     transform: rotate(180deg);
     height: 3rem;
@@ -196,7 +189,7 @@ a{
 .l-arrow{
     content: url('./Assets/image/icons8-chevron-left-24.png');
     transform: rotate(0deg);
-    margin-left: -9rem !important;
+    margin-left: -1.5rem !important;
     height: 3rem;
     /* margin-top: 1.5rem !important; */
 }
@@ -237,13 +230,16 @@ a{
     padding-bottom:1rem;
 }
 .c-body{
-   margin: 0rem 0rem 2rem 0rem !important;
+   margin: 0rem 0rem 2rem 2% !important;
    background-color: rgba(255, 238, 255, 0.84);
+   height: auto;
+   width: 95% !important;
     box-shadow: 1px 1px 20px black;
     border-radius: 1rem;
 }
 .txt{
-    margin: 3.5rem 0rem 0 4rem ;
+    place-content: center !important;
+    margin: 1.5rem 0rem 1.5rem 6% ;
     font-size: 3.2rem;
     color: #767676;
     border-radius: 0.4rem;
@@ -253,12 +249,12 @@ a{
 .contact1{
     box-sizing: border-box;
     border-radius: 0.3rem;
-    width: 30rem;
+    width: auto;
     left: auto;
     right: auto;
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    padding: 1.5rem;
     height: auto;
-    margin: 2rem 0rem 2rem 10rem;
+    margin: 5% 8% 1% 0%;
     box-shadow: 2px 5px 30px black;
 }
  
@@ -277,11 +273,8 @@ a{
     line-height: 25px;
     font-family: 'Inter','Poppins', sans-serif;
  }
- .Cont{
-    width: 100%;
- }
  .r1{
-    width: 85rem;
+    width: 100%;
  }
  .r1 ul li{
     list-style: none;
