@@ -48,6 +48,20 @@ a{
 .nav-item .nav-link:hover{
     color:rgb(43, 48, 48) !important;
 }
+.f_offer{
+    background-color: rgb(75, 135, 149);
+}
+/* marquee{} */
+.marq_a{
+    font-size: 24px;
+    color: goldenrod !important;
+
+}
+.marq-txt {
+    padding-top: 0.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
 .happy{
     margin: 0.5rem 0rem !important;
  }
