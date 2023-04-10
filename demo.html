@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    
+    .card{
+            width: 250px ;
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+             border: 4px solid white;
+             position: relative;
+             margin: 2%;
+             display: flex;
+             flex-wrap: wrap;
+        }
+        .card-img{
+           width:100%;
+           height:100% ;
+           object-fit: cover;
+           border-radius:15px ;
+        }
+        .card-body{
+            width: 100%;
+            height: 100%;
+            /*top: 0;*/
+            
+            position: absolute;
+            background:rgba(103, 91, 91, 0.425) ;
+            /*backdrop-filter: blur(5px);*/
+            border-radius: 15px;
+            color: #fff;
+            padding: 0.7rem;
+            /*flex-direction:column;*/
+            
+          
+            
+
+        }
+        .social-link a{
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height:30px ;
+        border-radius: 45%;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        }
+        .card-title{
+           text-transform: uppercase;
+           font-size: 17px;
+           font-weight:700;
+           margin-top: -40px;
+           
+           
+
+        }
+        .card-info{
+          font-size: 30px;
+          line-height:16px;
+          padding-bottom: 10px;
+          font-weight: 300;
+        }
+        /*.card:hover .card-body {
+           right: 0;*/
+        }
+   
+ </style>
+<body>
+    <div class="card">
+        <img src="./Assets/image/kali.jpg" class="card-img" alt="" >
+        <div class="card-body">
+            <h1 class="card-title">Heading</h1>
+            
+            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dignissimos?</p>
+            <div class="social-link">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+           </div>
+         </div>  
+</body>
+</html>
