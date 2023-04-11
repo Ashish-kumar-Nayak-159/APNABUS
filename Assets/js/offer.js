@@ -9,14 +9,14 @@ const from = document.getElementById("from");
         const r_to = document.getElementById("r_to");
 
         function display_offer() {
-            if (from.value == "") {
+            if (from.value == " ") {
                 phase2_enable.style.display = "none";
                 r_from.style.display = "flex";
             }
             else {
                 phase2_enable.style.display = "block";
             }
-            if (to.value == "") {
+            if (to.value == " ") {
                 phase2_enable.style.display = "none";
                 r_to.style.display = "flex";
             } else {
@@ -24,10 +24,10 @@ const from = document.getElementById("from");
             }
         }
 
-        function hide() {
+        function hide2() {
             if (from.value != "") {
                 r_from.style.display = "none";
-
+                
             } else {
                 r_from.style.display = "flex";
 
