@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400&display=swap');
+
+a{
+    text-decoration: none !important;
+}
+.apna-bus-navbar{
+    background:linear-gradient(rgba(177, 171, 171, 0.729),rgba(89, 151, 172, 0.8)) !important;
+    font-size: 1rem !important;
+}
+
+.navbar-brand{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.3rem !important;
+    color: #ffffff !important;
+    position: relative;
+    margin-left: 0.6rem !important; 
+}
+.logo_dg{
+    width: 3rem !important;
+    height: 1rem !important;
+    size: 0.1rem;
+}
+.navbar-brand .logo_dg:hover{
+    text-shadow: 0px 0px 20px rgb(147, 162, 176);
+
+}
+.mun{
+    color: rgb(255, 255, 255) !important;
+}
+.nav-item .line{
+    background-color: rgb(19, 115, 153);
+    height: 0.2rem;
+    margin:-0.5rem 0 0 0.3rem;
+    width:0%;
+    left:auto;
+    right: auto;
+    border-radius: 0.5rem;
+    transition:width 0.7s ease-in-out;
+    opacity: 0;
+}
+.nav-item .nav-link:hover ~.line{
+    opacity: 1;
+    left:auto;
+    right: auto;
+    width: 90%;
+}
+.nav-item .nav-link:hover{
+    color:rgb(43, 48, 48) !important;
+}
+.f_offer{
+    background-color: rgb(75, 135, 149);
+}
+/* marquee{} */
+.marq_a{
+    font-size: 24px;
+    color: goldenrod !important;
+
+}
+.marq-txt {
+    padding-top: 0.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.happy{
+    margin: 0.5rem 0rem !important;
+ }
+ .sub_content1{
+    display:none;
+ }
+.ico3{
+    padding: 1rem 2rem;
+    margin:0rem .5em !important;
+    width: 15rem !important;
+    height: auto !important;
+    background-color: rgb(247, 247, 247) !important;    
+    box-shadow: 0px 0px 20px rgb(147, 162, 176);
+    border-radius: 1rem;
+}
+.swip_arrow{
+    position: absolute;
+    content:url(./Assets/image/swap-arrow.png);
+    margin: -3rem 0 0 37.2%;
+    height: 40px;
+    transform: rotate(90deg);
+
+}
+.swip_arrow1{
+    position: absolute;
+    content:url(./Assets/image/swap-arrow.png);
+    margin: -3rem 0rem 0 -1.8%;
+    height: 40px;
+    transform: rotate(90deg);
+
+}
+.way_cont {
+    margin-top: 5rem;
+}
+
+/* .lbl_way {
+    margin-right: .5rem;
+    margin-bottom: 0.1rem;
+} */
+
+.Seat_cont {
+    margin: 1.2rem -3rem 0 1rem;
+    border-radius: 2rem;
+}
+
+.choose_1 {
+    padding: 2% 0 0 10%;
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 3px;
+}
+
+.days {
+    margin-left: -6%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.r_from,.r_to  {
+    display: none;
+    position: absolute;
+    margin: 3% 0 0 65%;
+    color: red;
+}
+
+option {
+    height: 1rem;
+}
+.ad_leave{
+    margin-left: -33%;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+/* Footer*/
+.footer{
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 3rem 0;
+    line-height: 25px;
+    font-family: 'Inter','Poppins', sans-serif;
+ }
+ .r1{
+    width: 100%;
+ }
+ .r1 ul li{
+    list-style: none;
+ }
+ .r1 ul li a{
+    text-decoration: none;
+ }
+ .r-col .f-hd{
+    /* color: rgb(113, 78, 78); */
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0 0 30px 1.5rem;
+    width: 10rem;
+    font-weight: 500;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+ }
+ .f-hd:hover{
+    color: #00aeff !important;
+ }
+ .r-col ul li a{
+    text-decoration: none;
+    color: rgb(145, 138, 138);
+    font-size: 15px;
+    width: 6rem;
+    display: block;
+    text-transform: capitalize;
+    transition:all 0.3s ease;
+
+ }
+ .r-col ul li a:hover{
+    color: beige;
+    padding-left: 10px;
+    text-shadow: 0px 0px 15px rgb(147, 162, 176);
+    /* background-color: rgb(147, 162, 176); */
+ }
+ .r-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 4px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 45%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+   }
+ .r-col .social-link a:hover{
+    color: #24262b;
+    box-shadow: 0px 0px 12px rgb(147, 162, 176);
+    background-color: #ffffff;
+ }  
+      
+
+ .dvlp{
+    margin-bottom: -3rem;
+    padding-top: 0.4rem;
+    opacity: 0.6;
+ }
+
+ .dvlp-h{
+    font-size: 0.6rem !important;
+
+ }
+ .dvlp-h a{
+    text-decoration: none;
+ }
+ .dvlp-h a:hover{
+    text-decoration:underline;
+    opacity: 0.8;
+ }

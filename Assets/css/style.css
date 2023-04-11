@@ -54,7 +54,7 @@ a{
                                 rgba(41, 72, 81, 0.721)
                                 /* rgba(86, 160, 161, 0.763) */
                                 ),
-                                url('./Assets/image/tourismo-teaser-facts.jpg');
+                                url('../image/tourismo-teaser-facts.jpg');
     height: 92vh;
     background-position: center;
     background-size: cover;
