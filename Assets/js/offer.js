@@ -27,7 +27,6 @@ const from = document.getElementById("from");
         function hide() {
             if (from.value != "") {
                 r_from.style.display = "none";
-
             } else {
                 r_from.style.display = "flex";
 
