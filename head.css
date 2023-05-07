@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+:root{
+    --theme-dark-blue:rgb(20, 108, 148);
+    --theme-blue:rgb(25, 167, 206);
+    --theme-black:#021806;
+    --theme-white:#EEF2E6;
+    --theme-l-blue:#AFD3E2;
+    --theme-light:#F6F1F1;
+    --fontsize:12px;
+}
+a{
+    text-decoration: none !important;
+}
+.apna-bus-navbar{
+    /* background:linear-gradient(rgba(177, 171, 171, 0.729),rgba(89, 151, 172, 0.8)) !important; */
+    background-color: var(--theme-dark-blue) !important;
+    font-size: 1rem !important;
+     
+}
+
+.navbar-brand{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.3rem !important;
+    color: #ffffff !important;
+    position: relative;
+    margin-left: 0.6rem !important; 
+    
+
+}
+.logo_dg{
+    width: 3rem !important;
+    height: 1rem !important;
+    size: 0.1rem;
+}
+.navbar-brand .logo_dg:hover{
+    text-shadow: 0px 0px 20px rgb(147, 162, 176);
+
+}
+.mun{
+    color: rgb(255, 255, 255) !important;
+}
+/* .bus:active{
+  color: red; 
+}*/
+.nav-item .line{
+    background-color: var(--theme-light);
+    height: 0.2rem;
+    margin:-0.5rem 0 0 0.3rem;
+    width:0%;
+    left:auto;
+    right: auto;
+    border-radius: 0.5rem;
+    transition:width 0.7s ease-in-out;
+    opacity: 0;
+}
+.nav-item .nav-link:hover ~.line{
+    opacity: 1;
+    left:auto;
+    right: auto;
+    width: 90%;
+}
+.nav-item .nav-link:hover{
+    color:var(--theme-light) !important;
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400&display=swap');
+:root{
+    --theme-dark-blue:#146C94;
+    --theme-blue:#19A7CE;
+    --theme-black:#021806;
+    --theme-white:#EEF2E6;
+    --theme-l-blue:#AFD3E2;
+    --theme-light:#F6F1F1;
+    --fontsize:12px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+a{
+    text-decoration: none !important;
+}
+.apna-bus-navbar{
+    background-color: var(--theme-dark-blue);
+    /* background:linear-gradient(rgba(177, 171, 171, 0.729),rgba(89, 151, 172, 0.8)) !important; */
+    font-size: 1rem !important;
+}
+
+.navbar-brand{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.3rem !important;
+    color: var(--theme-light) !important;
+    position: relative;
+    margin-left: 0.6rem !important; 
+}
+.logo_dg{
+    width: 3rem !important;
+    height: 1rem !important;
+    size: 0.1rem;
+}
+.navbar-brand .logo_dg:hover{
+    text-shadow: 0px 0px 20px rgb(147, 162, 176);
+
+}
+.mun{
+    /* color: rgb(255, 255, 255) !important; */
+    color: var(--theme-light) !important;
+}
+.bus:active{
+    color: #00aeff;
+}
+.nav-item .line{
+    /* background-color: rgb(19, 115, 153); */
+    background-color:var(--theme-light);
+    height: 0.2rem;
+    margin:-0.5rem 0 0 0.3rem;
+    width:0%;
+    left:auto;
+    right: auto;
+    border-radius: 0.5rem;
+    transition:width 0.7s ease-in-out;
+    opacity: 0;
+}
+.nav-item .nav-link:hover ~.line{
+    opacity: 1;
+    left:auto;
+    right: auto;
+    width: 90%;
+}
+.nav-item .nav-link:hover{
+    /* color:rgb(43, 48, 48) !important; */
+    color:var(--theme-light) !important;
+    
+}
+.main-sec{
+   
+}
+.top-sec{
+    width: 100%;
+    height: 120px;
+    /* background-color:rgb(230, 236, 236); */
+    /* background-color: #3D8361; */
+    background-color: var(--theme-l-blue);
+    padding: 10px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    
+
+
+}
+.searching{
+    margin-top: 30px;
+    display: flex;
+   justify-content: center;
+    
+}
+.from-input{
+    margin-left:30px ;
+
+
+}
+.form-style{
+    padding: 5px 30px ;
+    border-radius: 5px;
+    border: 2px solid var(--theme-green);
+    
+}
+.date{
+    margin-left: 20px;
+    
+    
+}
+.date-2{
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+    
+.button{
+  margin-left: 20px;
+  padding: 5px 20px;
+  border-radius: 50px; 
+  margin-top: -5px; 
+  background-color: var(--theme-dark-blue);
+  border-style: none;
+  color: var(--theme-light);
+}
+#i{
+    margin-left: 17px;
+}
+/*bus available style part*/
+.bus-available{
+    position: relative;
+    width: 100%;
+    background-color: var(--theme-light);
+    
+}
+.heading-1{
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 2rem;
+   text-align: center; 
+   padding: 20px;
+   background-color:var(--theme-dark-blue);  
+   color: var(--theme-light);
+   height: 50px;
+}
+.sort{
+    width: 100%;
+    height: 50px;
+    /* background-color: ;  */
+}
+.c1 span{
+    margin-left:75px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.button-a{
+    padding-left: 2.5rem;
+}
+.btn-a{
+    border: none;
+    margin: 30px 0.2rem 40px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--theme-blue);
+    color: #EEF2E6; 
+    height: 2.7rem;
+    width: 5.8rem;
+}
+.sort ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+} 
+  .sort ul li{
+    margin-left: 75px; 
+} 
+.bus-detail{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    
+}
+.filter{
+    width: 25%;
+    height: 500px;
+    display: flex;
+   
+}
+.details{
+    overflow: hidden;
+    width: 75%;
+    height: 100%;
+    
+}
+.c1{
+    
+    border: 1px solid var(--theme-dark-blue);
+    height: 150px;
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    background-color: var(--theme-light);
+    border-radius: 10px;
+}
+
+.rate{
+    background-color: green;
+    width: 3rem;
+    height: 1.5rem;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+}
+.c1 .title{
+    padding-top:20px ;
+    padding-left:10px ;
+    font-weight: bold;
+}
+
+/*end of bus available style part*/

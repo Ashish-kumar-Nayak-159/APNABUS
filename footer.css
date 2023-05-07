@@ -1,0 +1,81 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 3rem 0;
+    line-height: 25px;
+    font-family: 'Inter','Poppins', sans-serif;
+ }
+ .r1{
+    width: 100%;
+ }
+ .r1 ul li{
+    list-style: none;
+ }
+ .r1 ul li a{
+    text-decoration: none;
+ }
+ .r-col .f-hd{
+    /* color: rgb(113, 78, 78); */
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0 0 30px 1.5rem;
+    width: 10rem;
+    font-weight: 500;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+ }
+ .f-hd:hover{
+    color: #00aeff !important;
+ }
+ .r-col ul li a{
+    text-decoration: none;
+    color: rgb(145, 138, 138);
+    font-size: 15px;
+    width: 6rem;
+    display: block;
+    text-transform: capitalize;
+    transition:all 0.3s ease;
+
+ }
+ .r-col ul li a:hover{
+    color: beige;
+    padding-left: 10px;
+    text-shadow: 0px 0px 15px rgb(147, 162, 176);
+    /* background-color: rgb(147, 162, 176); */
+ }
+ .r-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 4px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 45%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+   }
+ .r-col .social-link a:hover{
+    color: #24262b;
+    box-shadow: 0px 0px 12px rgb(147, 162, 176);
+    background-color: #ffffff;
+ }  
+      
+
+ .dvlp{
+    margin-bottom: -3rem;
+    padding-top: 0.4rem;
+    opacity: 0.6;
+ }
+
+ .dvlp-h{
+    font-size: 0.6rem !important;
+
+ }
+ .dvlp-h a{
+    text-decoration: none;
+ }
+ .dvlp-h a:hover{
+    text-decoration:underline;
+    opacity: 0.8;
+ }
