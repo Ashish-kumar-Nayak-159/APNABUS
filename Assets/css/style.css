@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400&display=swap');
+
+a{
+    text-decoration: none !important;
+}
+.apna-bus-navbar{
+    background:linear-gradient(rgba(177, 171, 171, 0.729),rgba(89, 151, 172, 0.8)) !important;
+    font-size: 1rem !important;
+}
+
+.navbar-brand{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.3rem !important;
+    color: #ffffff !important;
+    position: relative;
+    margin-left: 0.6rem !important; 
+}
+.logo_dg{
+    width: 3rem !important;
+    height: 1rem !important;
+    size: 0.1rem;
+}
+.navbar-brand .logo_dg:hover{
+    text-shadow: 0px 0px 20px rgb(147, 162, 176);
+
+}
+.mun{
+    color: rgb(255, 255, 255) !important;
+}
+.nav-item .line{
+    background-color: rgb(19, 115, 153);
+    height: 0.2rem;
+    margin:-0.5rem 0 0 0.3rem;
+    width:0%;
+    left:auto;
+    right: auto;
+    border-radius: 0.5rem;
+    transition:width 0.7s ease-in-out;
+    opacity: 0;
+}
+.nav-item .nav-link:hover ~.line{
+    opacity: 1;
+    left:auto;
+    right: auto;
+    width: 90%;
+}
+.nav-item .nav-link:hover{
+    color:rgb(43, 48, 48) !important;
+}
+
+.banner1{
+    background:linear-gradient(rgba(86, 86, 135, 0.9),
+                                /* rgba(99, 99, 195, 0.629), */
+                                rgba(41, 72, 81, 0.721)
+                                /* rgba(86, 160, 161, 0.763) */
+                                ),
+                                url('../image/tourismo-teaser-facts.jpg');
+    height: 92vh;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0rem;
+}
+.banner-text{
+    color: #ffffff;
+    padding: 14rem 0 0 10rem;
+}
+.banner-text h4{
+    font-size: 1.5rem;
+}
+.banner-text h1{
+    padding-top: 0.3rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.banner-btn{
+    text-decoration: none;
+    color: #ffea00;
+    margin-left: 0.5rem;
+    border: 2.5px solid #ff0000;
+    margin-top: 0.5rem !important;
+    padding: 0.4rem !important;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: 0.2s ease-out;
+}
+.banner-btn:hover {
+    color: #ff0000;
+    margin-left: 0.2rem;
+    border: 2.5px solid #ff0000;
+    background-color: rgb(255, 242, 0);
+    margin-top: 0.5rem !important;
+    padding: 0.5rem !important;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.search{
+    color: #ffffff;
+}
+.clr{
+    background-color:rgba(242, 218, 255, 0.723);
+}
+.wcu{
+    margin-bottom:0.8rem;
+}
+.choose-us{
+    color:blue;
+}
+.p-cont{
+    font-weight: 500;
+}
+.ico-row{
+    padding-top: 2.5%;
+    justify-content: center;
+}
+
+.ico1{
+    margin:1.5rem 0.8rem 3% 0;
+    border-radius: 0.4rem;
+    width: 11.4rem !important;
+    box-shadow: 0px 0px 20px rgb(147, 162, 176);
+    background-color: rgb(247, 247, 247) !important;
+}
+.info1{
+    margin-top: -5rem;
+}
+
+/* ----------------------service by us design ---------------------------------------- */
+.line1{
+    height: .2rem;
+    width: 8rem;
+    background-color: blueviolet;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* .sbu{ */
+    /* background-color: #ffffff ; */
+    /* border-radius: 3rem; */
+/* } */
+
+.service-des{
+    box-shadow: -1px 1px 12px rgba(0, 0, 0, 0.566);
+}
+.service-des .col{
+    border-radius: 3%;
+    margin: 1rem .5rem !important;
+    padding: 2rem 2rem !important;
+    box-shadow: -1px 1px 12px rgba(0, 0, 0, 0.675);
+}
+.service-des i{
+    border: 1px solid black !important;
+    padding: 3rem;
+    border-radius: 5%;
+}
+.fa-greater-than{
+    color: rgba(255, 0, 0, 0.445) !important ;
+}
+.service-des p{
+    margin: 1rem 0;
+    text-align: center;
+}
+.service-des .row{
+    padding: 1rem 2rem !important;
+}
+.caro-btn{
+    border: 1.5px solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    text-decoration: none;
+    color: #24262b;
+    font-size: .9rem;
+    font-weight: 650;
+}
+.caro-btn:hover{
+    color: black;
+    border: 2px solid red;
+    background-color:aliceblue;    
+    box-shadow: 0px 0px 20px rgb(218, 68, 22);
+
+}
+.r-arrow{
+    margin-right: -1.5rem !important;
+    content: url('./Assets/image/icons8-chevron-left-24.png');
+    transform: rotate(180deg);
+    height: 3rem;
+    /* margin-top: 1.5rem !important; */
+}
+.l-arrow{
+    content: url('./Assets/image/icons8-chevron-left-24.png');
+    transform: rotate(0deg);
+    margin-left: -1.5rem !important;
+    height: 3rem;
+    /* margin-top: 1.5rem !important; */
+}
+
+
+/* ----------------------service by us design ---------------------------------------- */
+
+
+/* ----------------------service prodided by us ---------------------------------------- */
+.happy{
+   margin: 0.5rem 0rem !important;
+}
+.hd{
+   margin: 0rem 0rem 2rem 0rem !important;
+}
+.num_hvr:hover{
+    text-shadow: 0px 0px 30px rgb(126, 174, 218);
+    font-size: 2.2rem !important;
+    margin-top: -0.1rem;
+}
+.txt_con{
+    font-weight: 500;
+}
+.ico2{
+    padding-top: 4rem;
+    margin:2rem 1.5em;
+    width: 8rem !important;
+    height: 12rem;
+    background-color: rgb(247, 247, 247) !important;    
+    box-shadow: 0px 0px 20px rgb(147, 162, 176);
+
+    border-radius: 1rem;
+}
+
+
+/*---------------------------contact Us form--------------------------------*/
+.cc{
+    padding-bottom:1rem;
+}
+.c-body{
+   margin: 0rem 0rem 2rem 2% !important;
+   background-color: rgba(255, 238, 255, 0.84);
+   height: auto;
+   width: 95% !important;
+    box-shadow: 1px 1px 20px black;
+    border-radius: 1rem;
+}
+.txt{
+    place-content: center !important;
+    margin: 1.5rem 0rem 1.5rem 6% ;
+    font-size: 3.2rem;
+    color: #767676;
+    border-radius: 0.4rem;
+    box-shadow: 2px 5px 30px black;
+
+}
+.contact1{
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    width: auto;
+    left: auto;
+    right: auto;
+    padding: 1.5rem;
+    height: auto;
+    margin: 5% 8% 1% 0%;
+    box-shadow: 2px 5px 30px black;
+}
+ 
+.contact1 input,label{
+    padding: 0.5rem !important;
+    height: 3rem !important;
+}
+
+
+/* Footer*/
+
+
+ .footer{
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 3rem 0;
+    line-height: 25px;
+    font-family: 'Inter','Poppins', sans-serif;
+ }
+ .r1{
+    width: 100%;
+ }
+ .r1 ul li{
+    list-style: none;
+ }
+ .r1 ul li a{
+    text-decoration: none;
+ }
+ .r-col .f-hd{
+    /* color: rgb(113, 78, 78); */
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0 0 30px 1.5rem;
+    width: 10rem;
+    font-weight: 500;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+ }
+ .f-hd:hover{
+    color: #00aeff !important;
+ }
+ .r-col ul li a{
+    text-decoration: none;
+    color: rgb(145, 138, 138);
+    font-size: 15px;
+    width: 6rem;
+    display: block;
+    text-transform: capitalize;
+    transition:all 0.3s ease;
+
+ }
+ .r-col ul li a:hover{
+    color: beige;
+    padding-left: 10px;
+    text-shadow: 0px 0px 15px rgb(147, 162, 176);
+    /* background-color: rgb(147, 162, 176); */
+ }
+ .r-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 4px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 45%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+   }
+ .r-col .social-link a:hover{
+    color: #24262b;
+    box-shadow: 0px 0px 12px rgb(147, 162, 176);
+    background-color: #ffffff;
+ }  
+      
+
+ .dvlp{
+    margin-bottom: -3rem;
+    padding-top: 0.4rem;
+    opacity: 0.6;
+ }
+
+ .dvlp-h{
+    font-size: 0.6rem !important;
+
+ }
+ .dvlp-h a{
+    text-decoration: none;
+ }
+ .dvlp-h a:hover{
+    text-decoration:underline;
+    opacity: 0.8;
+ }
